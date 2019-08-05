@@ -14,6 +14,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HighlightPipe } from './pipe/highlight-pipe';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    HighlightPipe
   ],
   providers: [ HeroService, MessageService ],
   bootstrap: [AppComponent]
